@@ -12,23 +12,25 @@
     display: flex;
     height: 100vh;
   }
-  .left-section {
-    flex: 1;
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically center */
-  }
-  .left-content {
-    align-self: flex-start; /* Align left within the centered column */
-    margin-top: auto; /* Push content down, keeping logo at top */
   }
   .logo {
-    width: 350px; /* Adjust the size as needed */
-    align-self: flex-start; /* Keep logo at the top left */
+    width: 400px; /* Adjust the size as needed */
+  }
+  .left-section {
+    flex: 1;
+    padding-top: 100px; /* Adjust as per logo height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start (left) */
   }
   .profile-picture {
-    width: 200px; /* Adjust the size as needed */
+    width: 250px; /* Adjust the size as needed */
     border-radius: 50%; /* Circular shape */
     margin-top: 20px;
   }
@@ -43,18 +45,19 @@
 </head>
 <body>
 
-<div class="left-section">
+<div class="header">
   <img src="logo.png" alt="BLVD Residential Logo" class="logo">
-  <div class="left-content">
-   
-    <h1>Welcome to BLVD Residential Atlas</h1>
-    <img src="agent.png" alt="Chat Agent" class="profile-picture">
-  </div>
+</div>
+
+<div class="left-section">
+  <h1>Welcome to BLVD Residential Atlas</h1>
+  <img src="agent.png" alt="Chat Agent" class="profile-picture">
 </div>
 
 <div class="chat-area">
   <!-- Embed your chat prompt here -->
-        <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <!-- Chat prompt code goes here -->
+   <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
         <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
         <df-messenger
           oauth-client-id="920422084337-dd6mfp70s47mq88ddvpbg5h0m8tumvf6.apps.googleusercontent.com"
@@ -77,11 +80,11 @@
             width: 900px;
           }
         </style>
-  <!-- Chat prompt code goes here -->
 </div>
 
 </body>
 </html>
+
 
 
 
