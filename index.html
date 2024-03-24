@@ -21,9 +21,11 @@
   }
   .left-content {
     align-self: flex-start; /* Align left within the centered column */
+    margin-top: auto; /* Push content down, keeping logo at top */
   }
   .logo {
     width: 350px; /* Adjust the size as needed */
+    align-self: flex-start; /* Keep logo at the top left */
   }
   .profile-picture {
     width: 200px; /* Adjust the size as needed */
@@ -42,8 +44,9 @@
 <body>
 
 <div class="left-section">
+  <img src="logo.png" alt="BLVD Residential Logo" class="logo">
   <div class="left-content">
-    <img src="logo.png" alt="BLVD Residential Logo" class="logo">
+   
     <h1>Welcome to BLVD Residential Atlas</h1>
     <img src="agent.png" alt="Chat Agent" class="profile-picture">
   </div>
