@@ -7,44 +7,47 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-  }
-  .header {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: flex-end;
+    height: 100vh;
+  }
+  .left-section {
+    flex: 1;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .logo {
-    width: 150px; /* You can adjust the size as needed */
-  }
-  .content {
-    text-align: center;
-    margin-top: 50px;
+    width: 150px; /* Adjust the size as needed */
+    align-self: flex-start;
   }
   .profile-picture {
     width: 100px; /* Adjust the size as needed */
-    border-radius: 50%; /* Gives a circular shape to the image */
+    border-radius: 50%; /* Circular shape */
+    margin-top: 20px;
   }
   .chat-area {
-    margin-top: 20px;
-    /* Additional styling for your chat area as needed */
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Additional styling for chat area as needed */
   }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <img src="BLVD LOGO Horizontal.png" alt="BLVD Residential Logo" class="logo">
+<div class="left-section">
+  <img src="your-logo.png" alt="BLVD Residential Logo" class="logo">
+  <h1>Welcome to BLVD Residential Atlas</h1>
+  <img src="profile-picture.jpg" alt="Chat Agent" class="profile-picture">
 </div>
 
-<div class="content">
-  <img src="agent.png" alt="Chat Agent" class="profile-picture">
-  <h1>Welcome to BLVD Residential Atlas</h1>
-  <p>How can I help you today?</p>
-  
+<div class="chat-area">
   <!-- Embed your chat prompt here -->
-  <div class="chat-area">
-    <!-- Chat prompt code goes here -->
-    
         <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
         <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
         <df-messenger
@@ -65,13 +68,16 @@
             bottom: 0;
             right: 0;
             top: 0;
-            width: 1000px;
+            width: 900px;
           }
         </style>
-
-  </div>
+  <!-- Chat prompt code goes here -->
 </div>
 
 </body>
 </html>
+
+
+
+
 
