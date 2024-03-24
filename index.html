@@ -23,11 +23,16 @@
   }
   .left-section {
     flex: 1;
-    padding-top: 100px; /* Adjust as per logo height */
+    /*padding-top: 50px;*/ /* Adjust as per logo height */
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align items to the start (left) */
+    /*align-items: flex-start;*/ /* Align items to the start (left) */
+  }
+  .left-content {
+    align-self: flex-start; /* Align left within the centered column */
+    margin-top: auto; /* Push content down, keeping logo at top */
   }
   .profile-picture {
     width: 250px; /* Adjust the size as needed */
@@ -50,8 +55,10 @@
 </div>
 
 <div class="left-section">
-  <h1>Welcome to BLVD Residential Atlas</h1>
-  <img src="agent.png" alt="Chat Agent" class="profile-picture">
+  <div class="left-content">
+    <h1>Welcome to BLVD Residential Atlas</h1>
+    <img src="agent.png" alt="Chat Agent" class="profile-picture">
+  </div>
 </div>
 
 <div class="chat-area">
