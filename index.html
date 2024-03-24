@@ -1,23 +1,77 @@
-<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  oauth-client-id="920422084337-dd6mfp70s47mq88ddvpbg5h0m8tumvf6.apps.googleusercontent.com"
-  location="us-central1"
-  project-id="blvd-data-analytics-hub"
-  agent-id="762ba990-e0ec-4669-9e62-00df50fcaf24"
-  language-code="en"
-  max-query-length="-1">
-  <df-messenger-chat
-   chat-title="Atlas">
-  </df-messenger-chat>
-</df-messenger>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to BLVD Residential Atlas</title>
 <style>
-  df-messenger {
-    z-index: 999;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    width: 350px;
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  .logo {
+    width: 150px; /* You can adjust the size as needed */
+  }
+  .content {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .profile-picture {
+    width: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Gives a circular shape to the image */
+  }
+  .chat-area {
+    margin-top: 20px;
+    /* Additional styling for your chat area as needed */
   }
 </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="your-logo.png" alt="BLVD Residential Logo" class="logo">
+</div>
+
+<div class="content">
+  <img src="profile-picture.jpg" alt="Chat Agent" class="profile-picture">
+  <h1>Welcome to BLVD Residential Atlas</h1>
+  <p>How can I help you today?</p>
+  
+  <!-- Embed your chat prompt here -->
+  <div class="chat-area">
+    <!-- Chat prompt code goes here -->
+    
+        <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+        <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+        <df-messenger
+          oauth-client-id="920422084337-dd6mfp70s47mq88ddvpbg5h0m8tumvf6.apps.googleusercontent.com"
+          location="us-central1"
+          project-id="blvd-data-analytics-hub"
+          agent-id="762ba990-e0ec-4669-9e62-00df50fcaf24"
+          language-code="en"
+          max-query-length="-1">
+          <df-messenger-chat
+           chat-title="Atlas">
+          </df-messenger-chat>
+        </df-messenger>
+        <style>
+          df-messenger {
+            z-index: 999;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            width: 1000px;
+          }
+        </style>
+
+  </div>
+</div>
+
+</body>
+</html>
+
