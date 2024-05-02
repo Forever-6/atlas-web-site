@@ -40,12 +40,19 @@
     border-radius: 50%; /* Circular shape */
     margin-top: 20px;
   }
+  .support-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem; /* Adjust size as needed */
+    
   .chat-area {
     position:relative;
     flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 90%;
+    overflow: hidden;
     /* Additional styling for chat area as needed */
   }
 </style>
@@ -60,8 +67,31 @@
 <!--  <div class="left-content">-->
     <h1>Welcome to<br/>BLVD Residential Atlas</h1>
     <img src="agent.png" alt="Chat Agent" class="profile-picture">
+
+  <div class="support-text">
+  <p>How can I help you?</p>
+  <ol>
+    <li>
+      Ask questions about HR and employee handbook:
+      <ul>
+        <li>What is our holiday policy?</li>
+        <li>What is our PTO policy?</li>
+        <li>What is our travel policy?</li>
+      </ul>
+    </li>
+    <li>
+      Ask questions about our HOAs (Arizona Carousel HOA, Alterra South HOA, Arlington Estate at South Mountain HOA, Augusta Ranch HOA, Arizona Impressions HOA, Amber Ridge HOA, Arizona Spirit II HOA, Ashton Ranch Community HOA, Arrowhead Ranch HOA, Austin Ranch East Phase 2 HOA):
+      <ul>
+        <li>Are there any rental restrictions in the Ashton Ranch Community HOA?</li>
+        <li>What are the vehicle and parking rules for Amber Ridge HOA?</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+  
 <!--  </div> -->
 </div>
+
 
 <div class="chat-area">
   <!-- Embed your chat prompt here -->
